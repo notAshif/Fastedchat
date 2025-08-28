@@ -3,8 +3,9 @@
 import { useEffect } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { createClient } from "@/app/utils/supabase/client"
+import { Suspense } from "react"
 
-export default function AuthCallback() {
+function AuthCallbackInner() {
   const router = useRouter()
   const searchParams = useSearchParams()
 
@@ -30,5 +31,13 @@ export default function AuthCallback() {
     <div className="flex h-screen items-center justify-center bg-black text-white">
       <p>Confirming your email…</p>
     </div>
+  )
+}
+
+export default function AuthCallback() {
+  return (
+    <Suspense fallback={<div className="flex h-screen items-center justify-center bg-black text-white">Loading...</div>}>
+      <AuthCallbackInner />
+    </Suspense>
   )
 }
