@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Fasted Chat — Real-Time Chat UI (Next.js + Supabase)
 
-## Getting Started
+Fasted Chat is a clean and fast real-time chat interface built using Next.js, Supabase, and Tailwind CSS.
+It focuses on instant messaging, a minimal UI, and smooth responsiveness across all devices.
 
-First, run the development server:
+🛠️ Tech Stack
+<p align="left"> <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" /> <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" /> <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" /> </p>
+✨ Features
 
-```bash
+Real-time messaging powered by Supabase Realtime
+
+Minimal, clean, and modern UI
+
+Smooth responsiveness across all device sizes
+
+Fast rendering with Next.js App Router
+
+Clean and modular component structure
+
+TypeScript for safety and scalability
+
+📂 Project Structure
+app/
+  ├─ layout.tsx          # Root layout
+  ├─ page.tsx            # Main Chat UI
+components/
+  ├─ Message.tsx         # Individual chat message
+  ├─ InputBox.tsx        # Chat input field
+lib/
+  ├─ supabaseClient.ts   # Supabase configuration
+public/
+  ├─ assets/             # Icons / images
+
+🔧 Getting Started
+1. Clone the repository
+git clone https://github.com/your-username/fasted-chat.git
+cd fasted-chat
+
+2. Install dependencies
+npm install
+# or
+yarn install
+# or
+pnpm install
+
+3. Add environment variables
+
+Create a .env.local file in the project root:
+
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+4. Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Now open http://localhost:3000
+ in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+⚙️ Supabase Setup
 
-## Learn More
+Create a new project on https://supabase.com/
 
-To learn more about Next.js, take a look at the following resources:
+Go to Table Editor → Create Table
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Add a table named messages with fields:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Column	Type	Default
+id	bigint	auto increment
+text	text	—
+created_at	timestamp	now()
+user	text	—
 
-## Deploy on Vercel
+Enable Realtime for the messages table
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Copy your project URL + anon key → paste into your .env.local
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+That's it — messaging should now work live!
+
+📦 Deployment
+
+The project is fully optimized for Vercel.
+
+Steps:
+
+Push your code to GitHub
+
+Import the repo into Vercel
+
+Add your environment variables
+
+Deploy instantly
+
+📚 Additional Resources
+
+https://nextjs.org/docs
+
+https://supabase.com/docs
+
+https://tailwindcss.com/docs
+
+⭐ Feedback / Contributions
+
+Feel free to open issues or submit PRs if you want to improve the project!
