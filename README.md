@@ -1,12 +1,12 @@
-Fasted Chat — Real-Time Chat UI (Next.js + Supabase)
+# Fasted Chat — Real-Time Chat UI (Next.js + Supabase)
 
     Fasted Chat is a clean and fast real-time chat interface built using Next.js, Supabase, and Tailwind CSS.
     It focuses on instant messaging, a minimal UI, and smooth responsiveness across all devices.
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
     <p align="left"> <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" /> <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" /> <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" /> </p>
     
-✨ Features
+# ✨Features
 
     Real-time messaging powered by Supabase Realtime
     
@@ -20,7 +20,7 @@ Fasted Chat — Real-Time Chat UI (Next.js + Supabase)
     
     TypeScript for safety and scalability
 
-📂 Project Structure
+# 📂 Project Structure
 
     app/
       ├─ layout.tsx          # Root layout
@@ -33,13 +33,13 @@ Fasted Chat — Real-Time Chat UI (Next.js + Supabase)
     public/
       ├─ assets/             # Icons / images
 
-🔧 Getting Started
+# 🔧 Getting Started
 
     1. Clone the repository
     git clone https://github.com/your-username/fasted-chat.git
     cd fasted-chat
 
-2. Install dependencies
+# 2. Install dependencies
 
         npm install
         # or
@@ -47,7 +47,7 @@ Fasted Chat — Real-Time Chat UI (Next.js + Supabase)
         # or
         pnpm install
 
-4. Add environment variables
+# 4. Add environment variables
 
         Create a .env.local file in the project root:
         
@@ -62,7 +62,7 @@ Fasted Chat — Real-Time Chat UI (Next.js + Supabase)
         Now open http://localhost:3000
          in your browser.
 
-⚙️ Supabase Setup
+# ⚙️ Supabase Setup
 
     Create a new project on https://supabase.com/
     
@@ -82,7 +82,7 @@ Fasted Chat — Real-Time Chat UI (Next.js + Supabase)
     
     That's it — messaging should now work live!
 
-📦 Deployment
+# 📦 Deployment
 
     The project is fully optimized for Vercel.
     
@@ -96,7 +96,7 @@ Fasted Chat — Real-Time Chat UI (Next.js + Supabase)
     
     Deploy instantly
 
-📚 Additional Resources
+# 📚 Additional Resources
 
     https://nextjs.org/docs
     
